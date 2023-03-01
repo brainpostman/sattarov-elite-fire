@@ -1,0 +1,100 @@
+.header {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 148px;
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__navigation {
+    }
+
+    &__menu {
+    }
+}
+
+.logo {
+    &__text {
+        font-family: $scania-headline;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 3.5;
+        letter-spacing: 0.105em;
+        color: $main-text;
+    }
+
+    &__subtitle {
+        display: inline-block;
+        max-width: 99px;
+        font-family: $lab-grotesque;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        color: $gray-text;
+    }
+}
+
+.menu {
+    &__body {
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__item {
+        font-family: $lab-grotesque;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $header-text;
+    }
+
+    &__item:last-of-type {
+        margin-left: 20px;
+    }
+
+    &__item:hover {
+        color: $gold-highlight;
+    }
+
+    &__phone-icon {
+        z-index: 1;
+        position: relative;
+        height: 50px;
+        width: 50px;
+    }
+
+    &__phone-icon::before {
+        background-image: radial-gradient(70% 70% at 50% 50%, #C97335AD 0%, #073AFF00 50%);
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 100px;
+        height: 100px;
+        filter: blur(25px);
+    }
+}

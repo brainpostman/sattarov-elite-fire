@@ -1,0 +1,33 @@
+.promotional {
+    padding: 80px 0 80px 0;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        gap: 42px;
+        margin-bottom: 45px;
+    }
+
+    &__images:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__image {
+        width: 370px;
+        height: 267px;
+        background: #121212;
+        border-radius: 2px;
+    }
+}
+

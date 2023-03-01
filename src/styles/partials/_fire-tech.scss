@@ -1,0 +1,64 @@
+.fire-tech {
+    padding: 80px 0 80px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+    }
+
+    &__title {
+        z-index: 2;
+        width: 57%;
+        text-align: center;
+    }
+
+    &__text {
+        z-index: 2;
+        width: 50%;
+        text-align: center;
+        margin-bottom: -250px;
+    }
+
+    &__image {
+        z-index: 1;
+        margin: -500px;
+        padding: 290px;
+    }
+
+    &__kamin {
+        max-width: 100%;
+    }
+
+    &__specs {
+        z-index: 2;
+        margin-top: -160px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.spec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &__descr {
+        width: 160px;
+        font-family: $lab-grotesque;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $main-text;
+    }
+}
+
+.spec:last-of-type span {
+    width: 180px;
+}

@@ -1,0 +1,126 @@
+.refueling {
+    padding: 80px 0 80px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        padding-left: 84px;
+        flex: 1 1 36.5%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    &__content::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 623.63px;
+        height: 927.64px;
+        top: -150px;
+        left: -200px;
+        transform: rotate(45deg);
+        background: #00000088;
+        filter: blur(250px);
+        border-radius: 300px;
+    }
+
+    &__title {
+    }
+
+    &__text {
+        width: 70%;
+    }
+
+    &__text_indent {
+        width: 60%;
+    }
+
+    &__visuals {
+        position: relative;
+    }
+}
+
+.visuals {
+    &__descr {
+        z-index: 2;
+        position: absolute;
+        top: 80%;
+        left: -28%;
+    }
+
+    &__icons {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+
+    &__line {
+        width: 31px;
+        height: 0px;
+        border: 1px solid #949494;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    &__info-circle {
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        left: 63%;
+        border-radius: 50%;
+        width: 151px;
+        height: 151px;
+        background: radial-gradient(100% 65.98% at 100% 73.18%, #ffffff 0.31%, #ffe2a4 59.23%, #ffd47c 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $main-bg;
+    }
+
+    &__info-circle p:first-of-type {
+        font-family: $scania;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 7px;
+        margin-top: 10px;
+    }
+
+    &__info-circle p {
+        font-family: $scania;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 12px;
+    }
+    &__info-circle p:last-of-type {
+        font-family: $scania;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1;
+        width: 60%;
+        text-align: center;
+    }
+    & > img {
+        z-index: 1;
+        position: relative;
+        margin-left: -220px;
+        margin-right: -200px;
+        margin-top: -250px;
+        margin-bottom: -190px;
+    }
+}

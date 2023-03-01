@@ -1,0 +1,88 @@
+@import "./partials/_reset";
+@import "./partials/_commons";
+@import "./partials/_range-input";
+
+[class*="__container"] {
+    max-width: 1194px;
+    margin: 0px auto;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+    font-family: $lab-grotesque;
+    color: $main-text;
+    background-color: $main-bg;
+    background-image: url(../../resources/noise.png);
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.big-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(80% 175% at 60% -72%, #ffd9c4cc 3%, #fffee6cc 10%, #ff675200 100%),
+        radial-gradient(60% 175% at 80% -64%, #ffd9c4cc 3%, #fffef2cc 10%, #ff675200 100%),
+        radial-gradient(90% 185% at 17% 175%, #f98c4df6 6%, #ff6652c7 26%, #ff675200 82%),
+        radial-gradient(90% 185% at 6% 157%, #f98c4dfa 10%, #ff6652d5 20%, #ff675200 100%),
+        linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
+    font-family: $lab-grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    color: #121212;
+}
+
+.section-title {
+    font-family: $lab-grotesque;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(247.29deg, #ffffff 35.25%, rgba(255, 255, 255, 0) 104.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-text {
+    font-family: $lab-grotesque;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.65;
+    letter-spacing: 0.03em;
+    color: $main-text;
+}
+
+@import "./partials/_header";
+@import "./partials/_home-screen";
+@import "./partials/_fire-tech";
+@import "./partials/_refueling";
+@import "./partials/_smart-home";
+@import "./partials/_options";
+@import "./partials/_promotional";
+@import "./partials/_builder-form";
+@import "./partials/_footer";
